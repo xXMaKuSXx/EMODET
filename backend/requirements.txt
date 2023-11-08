@@ -1,0 +1,8 @@
+flask-cors
+Flask
+torch
+transformers
+PyAudio
+numpy
+librosa
+Werkzeug

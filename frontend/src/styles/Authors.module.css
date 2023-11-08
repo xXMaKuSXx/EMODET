@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 1200px;
+  margin: 120px auto;
+  gap: 20px;
+}
+.card {
+  min-width: 300px;
+  height: 600px;
+  border-radius: 25px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  caret-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 35px 25px;
+  font-size: 22px;
+}
+.card :first-child {
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+.left {
+  width: 29%;
+  border-radius: 50px;
+  background: #131418;
+}
+.center {
+  width: 40%;
+  border-radius: 20px;
+  background: linear-gradient(134deg, #131418 51.13%, #ffc804 115.73%);
+}
+.right {
+  width: 29%;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #ffc804 1.05%, #131418 96.34%);
+}
