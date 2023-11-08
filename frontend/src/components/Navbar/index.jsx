@@ -1,24 +1,25 @@
 import React from "react";
 import styles from "@/styles/Navbar.module.css";
+import Link from "next/link";
 
 function Navbar() {
   return (
     <nav className={`${styles.nav}`}>
       <div className={`${styles.container}`}>
         <div className="logo">
-          <a href="/">
+          <Link href="/">
             <img src="/Logo.png" className={`${styles.img}`}></img>
-          </a>
+          </Link>
         </div>
         <ul className={`${styles.ul}`}>
           <li>
-            <a href="/authors">Authors</a>
+            <Link href="/authors">Authors</Link>
           </li>
           <li>
-            <a href="/models">Models</a>
+            <Link href="/models">Models</Link>
           </li>
           <li>
-            <a href="/detection">Detection</a>
+            <Link href="/detection">Detection</Link>
           </li>
         </ul>
       </div>
