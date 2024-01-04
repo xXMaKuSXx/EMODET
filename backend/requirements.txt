@@ -6,3 +6,6 @@ PyAudio
 numpy
 librosa
 Werkzeug
+sounddevice
+pickle
+pydub

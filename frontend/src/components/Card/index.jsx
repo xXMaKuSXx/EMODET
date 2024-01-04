@@ -68,24 +68,24 @@ const Card = () => {
           Model:
           <div className={`${styles.col}`}>
             <Checkbox
-              label="Model 1"
+              label="Transformer"
               isChecked={isModelSelected[0]}
               onToggle={() => handleModelToggle(0)}
             />
             <Checkbox
-              label="Model 3"
+              label="LSTM"
               isChecked={isModelSelected[2]}
               onToggle={() => handleModelToggle(2)}
             />
           </div>
           <div className={`${styles.col}`}>
             <Checkbox
-              label="Model 2"
+              label="CNN"
               isChecked={isModelSelected[1]}
               onToggle={() => handleModelToggle(1)}
             />
             <Checkbox
-              label="Model 4"
+              label="MFCC"
               isChecked={isModelSelected[3]}
               onToggle={() => handleModelToggle(3)}
             />

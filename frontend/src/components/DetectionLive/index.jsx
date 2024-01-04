@@ -9,7 +9,9 @@ const DetectionLive = (model) => {
 
   const startRecording = async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const stream = await navigator.mediaDevices.getUserMedia({
+        audio: true,
+      });
       const recorder = new MediaRecorder(stream);
       const response = await axios("http://localhost:8080/start-recording");
 
@@ -30,10 +32,10 @@ const DetectionLive = (model) => {
         audio: true,
       });
       const recorder = new MediaRecorder(stream);
-
-      recorder.stop();
       setIsRecording(false);
+      recorder.stop();
     } catch (error) {
+      setIsRecording(false);
       console.error("Error stopping the recording:", error);
     }
   };
