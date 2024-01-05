@@ -24,7 +24,8 @@ CORS(app)
 app.config['SECRET_KEY'] = 'your_secret_key'
 BASE_DIR = Path(__file__).resolve().parent
 
-model_path = 'models/model.pth'
+# Loading and preparing Transformer model
+model_path = 'models/TRANSFORMERS_model/TRANSFORMERS_MODEL.pth'
 feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained("superb/hubert-large-superb-er")
 device = torch.device('cpu' if torch.cuda.is_available() else 'cpu')
 model = HubertForSequenceClassification.from_pretrained("superb/hubert-large-superb-er")
